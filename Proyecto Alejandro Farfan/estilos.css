@@ -1,0 +1,442 @@
+/* ESTILOS CSS PARA EL SITIO WEB DE TIPOS DE VIDEOJUEGOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    background-color: #6495ed;
+    font-family: Arial, sans-serif;
+}
+
+/* ESTILOS PARA EL HEADER */
+header {
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: #64D8ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    background: white;
+    border-radius: 75px;
+}
+
+/* Movimiento al pasar el mouse */
+header h1:hover {
+    transform: translateX(30px);
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    margin-top: 25px;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none; 
+    gap: 10px; /
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav li {
+    padding: 5px;
+}
+
+/* Estilos para los enlaces de navegación */
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #7964ED;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+/* Cambio de color al pasar el mouse sobre los enlaces */
+nav a:hover {
+    color: white;
+    background-color: #64D8ED;
+    border-color: #64D8ED;
+    transform: translateY(-5px);
+}
+
+/*SECCIÓN DE "QUÉ SON LOS GÉNEROS?"*/
+#que-son-generos {
+    width: 90%;
+    margin: 10px auto;
+}
+
+/* CONTENIDO DE LA SECCIÓN DE GÉNEROS */
+.contenido-generos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Estilos para el texto dentro de la sección de géneros */
+.texto-generos {
+    width: 60%;
+}
+
+/* Estilos para la imagen dentro de la sección de géneros */
+.imagen-generos {
+    width: 40%;
+    text-align: center;
+}
+
+/* ESTILOS PARA EL TÍTULO DENTRO DE LA SECCIÓN DE GÉNEROS */
+.texto-generos h2 {
+    color: #7964ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* ESTILOS PARA EL PÁRRAFO DENTRO DE LA SECCIÓN DE GÉNEROS */
+.texto-generos p {
+    color: rgb(9, 20, 20);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la imagen dentro de la sección de géneros */
+.imagen-generos img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+/* GÉNEROS */
+#generos {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* TÍTULO DE GÉNEROS */
+.titulo-generos {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS PARA EL TÍTULO DE GÉNEROS */
+.titulo-generos h2 {
+    color: #64D8ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ESTILOS PARA EL PÁRRAFO DEL TÍTULO DE GÉNEROS */
+.titulo-generos p {
+    color: rgb(9, 20, 20);
+    font-size: 20px;
+}
+
+/* ESTILOS PARA LAS IMÁGENES DENTRO DE CADA TARJETA DE GÉNERO */
+.tarjeta-genero img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* CONTENEDOR DE GÉNEROS */
+.contenedor-generos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* TARJETA DE CADA GÉNERO */
+.tarjeta-genero {
+    flex: 1 1 250px;
+    max-width: 350px;
+    min-height: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Cambio de color al pasar el mouse sobre la tarjeta */
+.tarjeta-genero:hover {
+    background-color: #eeeeee;
+}
+
+/* TÍTULOS DE CADA TARJETA DE GÉNERO */
+.tarjeta-genero h3 {
+    color: #7964ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* PÁRRAFOS */
+.tarjeta-genero p {
+    color: rgb(9, 20, 20);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.tarjeta-genero a {
+    background-color: #7964ED;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+.tarjeta-genero a:hover {
+    background-color: #4d1ca3;
+}
+
+/*CURIOSIDADES*/
+#curiosidades {
+    width: 90%;
+    margin: 60px auto;
+}
+
+/* TÍTULO DE CURIOSIDADES */
+.titulo-curiosidades {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS PARA EL TÍTULO DE CURIOSIDADES */
+.titulo-curiosidades h2 {
+    color: #64D8ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ESTILOS PARA EL PÁRRAFO DEL TÍTULO DE CURIOSIDADES */
+.titulo-curiosidades p {
+    color: rgb(9, 20, 20);
+    font-size: 20px;
+}
+
+/* TARJETAS  */
+.curiosidades-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* TARJETA DE CADA CURIOSIDAD */
+.curiosidad {
+    flex: 1 1 220px;
+    max-width: 350px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Cambio de color al pasar el mouse sobre la tarjeta */
+.curiosidad:hover {
+    background-color: #eeeeee;
+}
+
+/* ESTILOS PARA LOS TÍTULOS DE CADA TARJETA DE CURIOSIDAD */
+.curiosidad h3 {
+    color: #7964ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* ESTILOS PARA LOS PÁRRAFOS DENTRO DE CADA TARJETA DE CURIOSIDAD */
+.curiosidad p {
+    color: rgb(9, 20, 20);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+/* ESTILOS PARA EL TÍTULO DEL FOOTER */
+footer h2 {
+    color: #7964ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ESTILOS PARA LOS CAMPOS DE ENTRADA Y TEXTAREA */
+form input,
+form textarea {
+    width: min(100%, 200px);
+    padding: 10px;
+    border: 2px solid #64D8ED;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Evitar que el usuario cambie el tamaño del textarea */
+form textarea {
+    height: 40px;
+    resize: none;
+}
+
+/* ESTILOS PARA EL BOTÓN DE ENVÍO */
+form button {
+    padding: 10px 20px;
+    background-color: #64D8ED;
+    color: #7964ED;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+form button:hover {
+    background-color: #7964ED;
+    color: #64D8ED;
+}
+
+/* ESTILOS PARA EL MENSAJE DE ENVÍO */
+#mensaje {
+    color: #7964ED;
+    margin-top: 15px;
+}
+
+/* ESTILOS PARA EL PÁRRAFO DEL FOOTER */
+footer p {
+    color: #7964ED;
+    margin-top: 15px;
+}
+
+/* INFORMACIÓN DE CADA GÉNERO */
+.informacion-genero {
+    margin: 0 10% 30px;
+    background-color: rgb(0, 64, 128);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* ESTILOS PARA LOS TÍTULOS DE INFORMACIÓN DE GÉNERO */
+.informacion-genero h2 {
+    color: #7964ED;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+}
+
+/* ESTILOS PARA LOS PÁRRAFOS Y LISTAS DENTRO DE INFORMACIÓN DE GÉNERO */
+.informacion-genero p,
+.informacion-genero li {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Espaciado entre los elementos de la lista */
+.informacion-genero li {
+    margin: 15px;
+}
+
+/* ESTILOS PARA LOS ENLACES DENTRO DE INFORMACIÓN DE GÉNERO */
+.informacion-genero li a {
+    background-color: #7964ED;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+/* Cambio de color al pasar el mouse sobre los enlaces */
+.informacion-genero li a:hover {
+    background-color: #64D8ED;
+}
+
+/* CONTENEDOR DE JUEGOS */
+.contenedor-juegos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* TARJETA DE CADA JUEGO */
+.juego {
+    width: 230px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1f639e;
+    border: 2px solid #7162f5;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+/* Movimiento al pasar el mouse sobre la tarjeta del juego */
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para las imágenes de los juegos */
+.juego img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilo para el título del juego */
+.juego h3 {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Estilo para el botón de "Ver más" */
+.juego a {
+    display: inline-block;
+    background-color: #8058f5;
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+.juego a:hover {
+    background-color: #a78bfa;
+}
